@@ -7,8 +7,7 @@ import {ReactComponent as DeptIcon} from './../../assets/icons/icon-dept.svg';
 function Header(props) {
     const [clicked, setClicked] = useState(false);
 
-    function handleMenuClick(e){
-        e.preventDefault()
+    function handleMenuClick(){
         setClicked(!clicked)
     }
 

@@ -160,10 +160,13 @@ export const FooterComponent = styled.footer`
 
     .top {
         display: inline-block;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
 
         svg {
             fill: #141fd3;
-            transition: transform 0.2s ease-in;
+            transition: all 0.2s ease-in;
         }
 
         &:hover svg {
@@ -176,6 +179,25 @@ export const FooterComponent = styled.footer`
             font-weight: 200;
             font-size: 20px;
             text-transform: uppercase;
+            transition: all 0.2s ease-in;
+        }
+
+        @media ${breakpoints.device.phone}{
+            svg {
+                fill: white;
+            }
+
+            p {
+                color: white;
+            }
+
+            &:hover svg {
+                fill: #141fd3;
+            }
+
+            &:hover p {
+                color: #141fd3;
+            }
         }
 
     }

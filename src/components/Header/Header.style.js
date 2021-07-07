@@ -47,7 +47,7 @@ export const HeaderComponent = styled.header`
         }
 
         button {
-            border:none;
+            border: none;
             background-color: transparent;
 
             &:hover {

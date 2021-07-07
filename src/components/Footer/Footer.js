@@ -9,6 +9,11 @@ import {ReactComponent as InstagramIcon} from './../../assets/icons/icon-instagr
 import {ReactComponent as TopIcon} from './../../assets/icons/icon-scroll-to-top.svg';
 
 function Footer(props) {
+
+    function handleTopClick(){
+        console.log(1)
+    }
+
     return (
         <FooterComponent>
             <div className="footer-container">
@@ -23,9 +28,9 @@ function Footer(props) {
                         <li><a href="/contact">Contact</a></li>
                     </ul>
                     <ul className="social">
-                        <li><a href="https://www.facebook.com/DeptAgency/"><FacebookIcon alt="Facebook Icon"/></a></li>
-                        <li><a href="https://www.twitter.com/DeptAgency/"><TwitterIcon alt="Twitter Icon"/></a></li>
-                        <li><a href="https://www.instagram.com/DeptAgency/"><InstagramIcon alt="Instagram Icon"/></a></li>
+                        <li><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/DeptAgency/"><FacebookIcon alt="Facebook Icon"/></a></li>
+                        <li><a target="_blank" rel="noopener noreferrer" href="https://www.twitter.com/DeptAgency/"><TwitterIcon alt="Twitter Icon"/></a></li>
+                        <li><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/DeptAgency/"><InstagramIcon alt="Instagram Icon"/></a></li>
                     </ul>
                 </div>
                 <Divider />
@@ -39,10 +44,10 @@ function Footer(props) {
                         <li><p>&copy; {(new Date().getFullYear())} Dept</p></li>
                     </ul>
                 </div>
-                <a href="#top" className="top">
+                <button className="top" onClick={handleTopClick}>
                     <TopIcon />
                     <p>Top</p>
-                </a>
+                </button>
             </div>
         </FooterComponent>
     );
