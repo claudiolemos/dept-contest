@@ -2,10 +2,18 @@ import React from 'react';
 
 import {} from './Work.style.js';
 
+import Title from './Title/Title.js'
+import Cases from './Cases/Cases.js'
+import Clients from './Clients/Clients.js'
+import Form from './Form/Form.js'
+
 function Work(props) {
     return (
         <>
-            <p>Work</p>
+            <Title />
+            <Cases />
+            <Clients />
+            <Form />
         </>
     );
   }

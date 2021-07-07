@@ -36,7 +36,6 @@ export const FooterComponent = styled.footer`
             width: 125px;
         }
 
-
         @media ${breakpoints.device.phone}{
             display: none;
         }
@@ -155,7 +154,6 @@ export const FooterComponent = styled.footer`
             margin-left: 0;
             margin-top: 0;
         }
-
     }
 
     .top {

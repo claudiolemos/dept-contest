@@ -3,13 +3,13 @@ import breakpoints from './../../breakpoints.js';
 
 export const HeaderComponent = styled.header`
     padding: 15px;
-
-    .dept {
-        svg {
-            width: 85px;
-            fill: #272727;
-        }
-    }
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: all 0.3 ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
 
     ul {
         list-style-type: none;
@@ -64,6 +64,38 @@ export const HeaderComponent = styled.header`
         }
     }
 
+    .title {
+        opacity: 0;
+        display: flex;
+        visibility: hidden;
+        flex-direction: row;
+        margin: 0 auto;
+        transition: all 0.3 ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+
+        li {
+            font-family: 'Arial', -apple-system, sans-serif;
+            font-weight: 100;
+            font-size: 13px;
+            color: #272727;
+        }
+
+        li a {
+            text-decoration: none;
+            color: #272727;
+            transition: all 0.3 ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+        }
+
+        li a:hover {
+            color: #141fd3;
+        }
+
+        li:nth-of-type(1) {
+            font-weight: bold;
+        }
+    }
+
     .clicked .menu-bar-1 {
         -webkit-transform: rotate(-45deg) translate(-2px, 2px);
         transform: rotate(-45deg) translate(-2px, 2px);
@@ -75,9 +107,41 @@ export const HeaderComponent = styled.header`
         transform: rotate(45deg) translate(-2px, -2px);
         background-color: white;
     }
+
+    &.scroll {
+        background-color: rgba(255, 255, 255, 0.97);
+
+        .dept svg {
+            width: 60px;
+        }
+
+        hr {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .title {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    .dept {
+        svg {
+            width: 85px;
+            fill: #272727;
+            transition: all 0.3 ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+        }
+    }
 `
 
 export const Divider = styled.hr`
     border: 0.5px solid;
     border-color: #272727;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    transition: all 0.3 ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
 `

@@ -11,7 +11,7 @@ import {ReactComponent as TopIcon} from './../../assets/icons/icon-scroll-to-top
 function Footer(props) {
 
     function handleTopClick(){
-        console.log(1)
+        window.scrollTo({top: 0, behavior: "smooth"});
     }
 
     return (
