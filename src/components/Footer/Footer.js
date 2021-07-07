@@ -39,7 +39,7 @@ function Footer(props) {
                         <li><p>&copy; {(new Date().getFullYear())} Dept</p></li>
                     </ul>
                 </div>
-                <a className="top">
+                <a href="#top" className="top">
                     <TopIcon />
                     <p>Top</p>
                 </a>

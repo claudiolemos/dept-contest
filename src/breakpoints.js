@@ -9,4 +9,4 @@ const device = {
     desktop: `only screen and (min-width:${size.desktop})`
 }
 
-export default {size, device}
+export default {device, size};
