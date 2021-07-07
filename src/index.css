@@ -11,3 +11,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "Teko";
+  font-weight: 100;
+  src: url('./assets/fonts/Teko-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Teko";
+  font-weight: 200;
+  src: url('./assets/fonts/Teko-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Teko";
+  font-weight: 300;
+  src: url('./assets/fonts/Teko-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Teko";
+  font-weight: 400;
+  src: url('./assets/fonts/Teko-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Teko";
+  font-weight: 500;
+  src: url('./assets/fonts/Teko-Bold.ttf') format('truetype');
+}
