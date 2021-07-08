@@ -1,0 +1,158 @@
+[
+    {
+        "id": 1,
+        "label": "Arla",
+        "title": "Swipe to find your next holiday destination",
+        "image": "./images/cases/arla.png",
+        "description": "Protein drinks, yoghurts, a papaya, chocolate powder, and a few blueberries spread on top of a table",
+        "categories": [
+            "advertising", "branding"
+        ],
+        "industries": [
+            "agriculture & food"
+        ]
+    },
+    {
+        "id": 2,
+        "label": "Liberty Global",
+        "title": "Delivering complex commerce solutions",
+        "image": "./images/cases/liberty-global.png",
+        "description": "Server data center room",
+        "categories": [
+            "technology", "data & intelligence"
+        ],
+        "industries": [
+            "tech, media & telecommunications"
+        ]
+    },
+    {
+        "id": 3,
+        "label": "Koninklijke Bibliotheek",
+        "title": "The search for the most influential book ever",
+        "image": "./images/cases/koninklijke-bibliotheek.png",
+        "description": "Several books staked on top of each other in front of an orange background",
+        "categories": [
+            "media", "marketing"
+        ],
+        "industries": [
+            "education"
+        ]
+    },
+    {
+        "id": 4,
+        "label": "Zalando",
+        "title": "Innovative SEO and content strategy for Zalando",
+        "image": "./images/cases/zalando.png",
+        "description": "Two men brainstorming in front of a white board, one  of them is writing",
+        "categories": [
+            "strategy", "content"
+        ],
+        "industries": [
+            "tech, media & telecommunications"
+        ]
+    },
+    {
+        "id": 5,
+        "label": "JBL",
+        "title": "Live like a champion with Jerome Booteng",
+        "image": "./images/cases/jbl.png",
+        "description": "A man in a sporty jacket listening to music with his JBL headphones",
+        "categories": [
+            "advertising", "marketing"
+        ],
+        "industries": [
+            "tech, media & telecommunications"
+        ]
+    },
+    {
+        "id": 6,
+        "label": "Chocomel",
+        "title": "A campaign for the limited edition letter packs",
+        "image": "./images/cases/chocomel.png",
+        "description": "Several Chocomel packages in front of a yellow background",
+        "categories": [
+            "advertising", "marketing"
+        ],
+        "industries": [
+            "agriculture & food"
+        ]
+    },
+    {
+        "id": 7,
+        "label": "TUI",
+        "title": "Swipe to find your next holiday destination",
+        "image": "./images/cases/tui.png",
+        "description": "An illustration of a person with their camera on their shoulder looking at a map and scratching their head",
+        "categories": [
+            "digital marketing", "media"
+        ],
+        "industries": [
+            "travel"
+        ]
+    },
+    {
+        "id": 8,
+        "label": "Be Lightning",
+        "title": "Delivering clarity on a global scale",
+        "image": "./images/cases/lightning.png",
+        "description": "A street light in front of city buildings",
+        "categories": [
+            "technology", "strategy"
+        ],
+        "industries": [
+            "manufacturing & industrials", "public services & non-profit"
+        ]
+    },
+    {
+        "id": 9,
+        "label": "Gemeentemuseum",
+        "title": "A 100 years of Mondriaan & De Stijl",
+        "image": "./images/cases/gemeentemuseum.png",
+        "description": "A woman standing in front of an art piece at a museum",
+        "categories": [
+            "design", "media"
+        ],
+        "industries": [
+            "tech, media & telecommunications"
+        ]
+    },
+    {
+        "id": 10,
+        "label": "Philips",
+        "title": "Beautiful design meets innovative technology",
+        "image": "./images/cases/philips.png",
+        "description": "Several Philips lights displayed around a purple room",
+        "categories": [
+            "technology", "design"
+        ],
+        "industries": [
+            "tech, media & telecommunications", "consumer goods & services"
+        ]
+    },
+    {
+        "id": 11,
+        "label": "Kempen",
+        "title": "Not some average banking website",
+        "image": "./images/cases/kempen.png",
+        "description": "A man pointing at a piece of paper",
+        "categories": [
+            "data & intelligence"
+        ],
+        "industries": [
+            "banking, finance & insurance"
+        ]
+    },
+    {
+        "id": 12,
+        "label": "Bol.com",
+        "title": "A summer island in the Netherlands",
+        "image": "./images/cases/bolcom.png",
+        "description": "Several people having fun at lake, a man is sliding a water slide on top of a inflatable toy",
+        "categories": [
+            "advertising"
+        ],
+        "industries": [
+            "travel"
+        ]
+    }
+]
