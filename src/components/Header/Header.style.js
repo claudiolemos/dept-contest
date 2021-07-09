@@ -134,6 +134,10 @@ export const HeaderComponent = styled.header`
             -webkit-transition: all 0.3s ease-in-out;
         }
     }
+
+    .clicked svg {
+        fill: white;
+    }
 `
 
 export const Divider = styled.hr`

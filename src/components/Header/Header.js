@@ -21,7 +21,7 @@ function Header(props) {
     return (
         <HeaderComponent className={`${scroll? 'scroll' : ''}`}>
             <div className="header-container">
-                <a className="dept" href="/"><DeptIcon alt="Dept Icon"/></a>
+                <a className={`dept ${clicked? 'clicked' : ''}`} href="/"><DeptIcon alt="Dept Icon"/></a>
                 <ul className="title">
                     <li><p><a href="/">Dept Agency</a></p></li>
                     <li><p>&nbsp;&#8211;&nbsp;Work</p></li>
