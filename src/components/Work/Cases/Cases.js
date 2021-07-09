@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
-import { v4 as uuid } from 'uuid';
 
 import {Section} from './Cases.style.js';
 
@@ -24,7 +23,10 @@ function Cases(props) {
         axios
         .get('./data/cases.json')
         .then(response => {
-            const filteredCases = filterCases(response.data.reverse())
+            const filteredCases = response.data.reverse()
+                .filter(value => category !== Categories[0]? value.categories.includes(category) : true)
+                .filter(value => industry !== Industries[0]? value.industries.includes(industry) : true)
+
             setCases(filteredCases.slice(pageNumber*casesPerPage, pageNumber*casesPerPage+casesPerPage))
             setPageCount(Math.ceil(filteredCases.length / casesPerPage))
         })
@@ -32,12 +34,6 @@ function Cases(props) {
             console.log(error)
         })
     }, [category, industry, pageNumber, casesPerPage])
-
-    function filterCases(cases){
-        return cases
-            .filter(value => category !== Categories[0]? value.categories.includes(category) : true)
-            .filter(value => industry !== Industries[0]? value.industries.includes(industry) : true)
-    }
 
     function handleFilterChange(value, type) {
         if(type === 'category')
@@ -59,7 +55,7 @@ function Cases(props) {
         <Section>
             {
                 cases.map((singleCase) => (
-                    <SingleCase key={uuid()} case={singleCase}/>
+                    <SingleCase key={singleCase.id} case={singleCase}/>
                 ))
             }
         </Section>

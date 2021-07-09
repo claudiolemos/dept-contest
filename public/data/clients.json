@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "name": "Nivea",
+        "image": "./images/clients/Nivea_logo_zwart.png"
+    },
+    {
+        "id": 2,
+        "name": "Mona",
+        "image": "./images/clients/Mona_logo_zwart.png"
+    },
+    {
+        "id": 3,
+        "name": "Transavia",
+        "image": "./images/clients/Transavia_logo_zwart.png"
+    },
+    {
+        "id": 4,
+        "name": "Zalando",
+        "image": "./images/clients/Zalando_logo_zwart.png"
+    },
+    {
+        "id": 5,
+        "name": "Tomtom",
+        "image": "./images/clients/Tomtom_logo_zwart.png"
+    },
+    {
+        "id": 6,
+        "name": "Unilever",
+        "image": "./images/clients/Unilever_logo_zwart.png"
+    },
+    {
+        "id": 7,
+        "name": "Adidas",
+        "image": "./images/clients/Adidas_logo_zwart.png"
+    },
+    {
+        "id": 8,
+        "name": "Pathe",
+        "image": "./images/clients/Pathe_logo_zwart.png"
+    },
+    {
+        "id": 9,
+        "name": "ABN",
+        "image": "./images/clients/ABN_logo_zwart.png"
+    },
+    {
+        "id": 10,
+        "name": "Triumph",
+        "image": "./images/clients/Triumph_logo_zwart.png"
+    },
+    {
+        "id": 11,
+        "name": "Microsoft",
+        "image": "./images/clients/Microsoft_logo_zwart.png"
+    },
+    {
+        "id": 12,
+        "name": "Oxxio",
+        "image": "./images/clients/Oxxio_logo_zwart.png"
+    },
+    {
+        "id": 13,
+        "name": "NN",
+        "image": "./images/clients/NN_logo_zwart.png"
+    },
+    {
+        "id": 14,
+        "name": "Ziggo",
+        "image": "./images/clients/Ziggo_logo_zwart.png"
+    },
+    {
+        "id": 15,
+        "name": "Walibi",
+        "image": "./images/clients/Walibi_logo_zwart.png"
+    },
+    {
+        "id": 16,
+        "name": "KLM",
+        "image": "./images/clients/KLM_logo_zwart.png"
+    },
+    {
+        "id": 17,
+        "name": "DeltaLloyd",
+        "image": "./images/clients/DeltaLloyd_logo_zwart.png"
+    },
+    {
+        "id": 18,
+        "name": "Panasonic",
+        "image": "./images/clients/Panasonic_logo_zwart.png"
+    },
+    {
+        "id": 19,
+        "name": "Philips",
+        "image": "./images/clients/Philips_logo_zwart.png"
+    },
+    {
+        "id": 20,
+        "name": "United",
+        "image": "./images/clients/United_logo_zwart.png"
+    },
+    {
+        "id": 21,
+        "name": "Allianz",
+        "image": "./images/clients/Allianz_logo_zwart.png"
+    },
+    {
+        "id": 22,
+        "name": "Axe",
+        "image": "./images/clients/Axe_logo_zwart.png"
+    },
+    {
+        "id": 23,
+        "name": "Rabobank",
+        "image": "./images/clients/Rabobank_logo_zwart.png"
+    },
+    {
+        "id": 24,
+        "name": "Weber",
+        "image": "./images/clients/Weber_logo_zwart.png"
+    }
+]
