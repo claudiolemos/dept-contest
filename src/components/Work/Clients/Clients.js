@@ -47,10 +47,10 @@ function Clients(props) {
                         .sort((a, b) => a.index - b.index)
                         .map((client) => (
                             <GridElement key={client.id}>
-                                <Image className="first-image" src={client.image} alt={`${client.name} logo`}/>
                                 {client.old !== '' &&
                                     <Image className="second-image" src={client.old} alt={`${client.name} logo`}/>
                                 }
+                                <Image className="first-image" src={client.image} alt={`${client.name} logo`}/>
                             </GridElement>
                         ))
                 }
