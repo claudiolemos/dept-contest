@@ -8,7 +8,7 @@ function NotFound(props) {
     return (
         <Section>
             <VideoContainer>
-                <Video autoPlay loop muted poster="./images/404.jpg">
+                <Video autoPlay loop muted poster="./images/404.jpg" onContextMenu={(e) => e.preventDefault()}>
                     <Source type="video/mp4" src="./videos/404.mp4"/>
                 </Video>
                 <TitleText>404</TitleText>

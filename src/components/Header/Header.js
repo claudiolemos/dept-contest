@@ -14,6 +14,10 @@ function Header(props) {
         }
     }, [])
 
+    useEffect(() => {
+        document.body.style.overflow = clicked? 'hidden' : 'unset';
+    }, [clicked])
+
     function handleMenuClick(){
         setClicked(!clicked)
     }

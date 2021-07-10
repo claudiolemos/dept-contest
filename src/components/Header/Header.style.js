@@ -130,8 +130,10 @@ export const HeaderComponent = styled.header`
         svg {
             width: 85px;
             fill: #272727;
-            transition: all 0.3 ease-in-out;
             -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
         }
     }
 
