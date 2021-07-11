@@ -28,7 +28,9 @@ export const Button = styled.button`
     text-transform: uppercase;
     color: white;
     transition: transform 0.2s ease-in;
-    -webkit-transition: transform 0.2 ease-in;
+    -webkit-transition: transform 0.2s ease-in;
+    -moz-transition: transform 0.2s ease-in;
+    -o-transition: transform 0.2s ease-in;
 
     @media ${breakpoints.device.phone}{
         width: 100%;
@@ -38,7 +40,9 @@ export const Button = styled.button`
     p {
         transform: translateX(-10px);
         transition: transform 0.3s ease-in-out;
-        -webkit-transition: transform 0.3 ease-in-out;
+        -webkit-transition: transform 0.3s ease-in-out;
+        -moz-transition: transform 0.3s ease-in-out;
+        -o-transition: transform 0.3s ease-in-out;
     }
 
     svg {
@@ -46,7 +50,9 @@ export const Button = styled.button`
         transform: translateX(-20px) rotate(-90deg);
         opacity: 0;
         transition: all 0.3s ease-in-out;
-        -webkit-transition: transform 0.3 ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
     }
 
     &:hover{

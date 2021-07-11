@@ -44,6 +44,9 @@ export const Input = styled.input`
     width: 300px;
     box-shadow: 0 1px 0 0 #dddddd;
     transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
 
     &:focus {
         outline: none;
@@ -58,6 +61,9 @@ export const MessageInput = styled.textarea`
     height: 100px;
     box-shadow: 0 1px 0 0 #dddddd;
     transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
 
     &:focus {
         outline: none;
@@ -76,6 +82,9 @@ export const Submit = styled.input`
     color: white;
     text-transform: uppercase;
     transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
 
     &:hover {
         cursor: pointer;

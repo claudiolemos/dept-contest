@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 
-import {Section} from './Cases.style.js';
+import {Section, Message} from './Cases.style.js';
 
 import Filter from './Filter.js'
 import SingleCase from './SingleCase.js'
@@ -14,6 +14,7 @@ function Cases(props) {
     const [category, setCategory] = useState(Categories[0])
     const [industry, setIndustry] = useState(Industries[0])
     const [cases, setCases] = useState([])
+    const [paginate, setPaginate] = useState(false)
     const [pageNumber, setPageNumber] = useState(0)
     const [pageCount, setPageCount] = useState(0)
     const [pageRange, setPageRange] = useState(1)
@@ -27,6 +28,7 @@ function Cases(props) {
                 .filter(value => category !== Categories[0]? value.categories.includes(category) : true)
                 .filter(value => industry !== Industries[0]? value.industries.includes(industry) : true)
 
+            setPaginate(filteredCases.length > casesPerPage)
             setCases(filteredCases.slice(pageNumber*casesPerPage, pageNumber*casesPerPage+casesPerPage))
             setPageCount(Math.ceil(filteredCases.length / casesPerPage))
         })
@@ -59,7 +61,12 @@ function Cases(props) {
                 ))
             }
         </Section>
-        <Paginate onChange={handlePageChange} pageNumber={pageNumber} pageCount={pageCount} pageRange={pageRange}/>
+        {paginate &&
+            <Paginate onChange={handlePageChange} pageNumber={pageNumber} pageCount={pageCount} pageRange={pageRange}/>
+        }
+        {cases.length == 0 &&
+            <Message>Congrats, you have found a unicorn :) Change the filters to check out more cases!</Message>
+        }
         </>
     );
   }

@@ -20,6 +20,8 @@ clip-path: inset(0px);
     object-fit: cover;
     transition: all 0.2 ease-in;
     -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
 `
 
 export const Label = styled.p`
@@ -50,8 +52,10 @@ export const Button = styled.button`
         font-size: 14px;
         color: #1a18f7;
         text-transform: uppercase;
-        transition: all 023 ease-in;
+        transition: all 0.2 ease-in;
         -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
 
     }
 

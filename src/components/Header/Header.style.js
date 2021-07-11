@@ -4,12 +4,14 @@ import breakpoints from './../../breakpoints.js';
 export const HeaderComponent = styled.header`
     padding: 15px;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     right: 0;
     left: 0;
     transition: all 0.3 ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
 
     ul {
         list-style-type: none;
@@ -38,6 +40,10 @@ export const HeaderComponent = styled.header`
             font-weight: 200;
             font-size: 22px;
             text-transform: uppercase;
+            transition: all 0.3 ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
         }
 
         li {
@@ -61,6 +67,9 @@ export const HeaderComponent = styled.header`
             background-color: #272727;
             margin: 4px 0;
             transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
         }
     }
 
@@ -72,6 +81,8 @@ export const HeaderComponent = styled.header`
         margin: 0 auto;
         transition: all 0.3 ease-in-out;
         -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
 
         li {
             font-family: 'Arial', -apple-system, sans-serif;
@@ -85,6 +96,8 @@ export const HeaderComponent = styled.header`
             color: #272727;
             transition: all 0.3 ease-in-out;
             -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
         }
 
         li a:hover {
@@ -94,6 +107,10 @@ export const HeaderComponent = styled.header`
         li:nth-of-type(1) {
             font-weight: bold;
         }
+    }
+
+    .clicked p {
+        opacity: 0;
     }
 
     .clicked .menu-bar-1 {
@@ -130,10 +147,10 @@ export const HeaderComponent = styled.header`
         svg {
             width: 85px;
             fill: #272727;
+            transition: all 0.3s ease-in-out;
             -webkit-transition: all 0.3s ease-in-out;
             -moz-transition: all 0.3s ease-in-out;
             -o-transition: all 0.3s ease-in-out;
-            transition: all 0.3s ease-in-out;
         }
     }
 
@@ -150,4 +167,10 @@ export const Divider = styled.hr`
     bottom: 0;
     transition: all 0.3 ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+
+    &.clicked {
+        opacity: 0;
+    }
 `

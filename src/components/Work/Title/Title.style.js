@@ -36,6 +36,9 @@ export const Button = styled.button`
     text-transform: uppercase;
     color: white;
     transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
 
     &:hover{
         background-color: #141fd3;

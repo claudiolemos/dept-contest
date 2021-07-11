@@ -57,6 +57,9 @@ export const FooterComponent = styled.footer`
             font-size: 20px;
             text-transform: uppercase;
             transition: color 0.2s ease-in;
+            -webkit-transition: color 0.2s ease-in;
+            -moz-transition: color 0.2s ease-in;
+            -o-transition: color 0.2s ease-in;
         }
 
         li a:hover {
@@ -124,6 +127,9 @@ export const FooterComponent = styled.footer`
 
         li a {
             transition: color 0.2s ease-in;
+            -webkit-transition: color 0.2s ease-in;
+            -moz-transition: color 0.2s ease-in;
+            -o-transition: color 0.2s ease-in;
             align-items: center;
         }
 
@@ -165,6 +171,9 @@ export const FooterComponent = styled.footer`
         svg {
             fill: #141fd3;
             transition: all 0.2s ease-in;
+            -webkit-transition: all 0.2s ease-in;
+            -moz-transition: all 0.2s ease-in;
+            -o-transition: all 0.2s ease-in;
         }
 
         &:hover svg {
@@ -178,6 +187,9 @@ export const FooterComponent = styled.footer`
             font-size: 20px;
             text-transform: uppercase;
             transition: all 0.2s ease-in;
+            -webkit-transition: all 0.2s ease-in;
+            -moz-transition: all 0.2s ease-in;
+            -o-transition: all 0.2s ease-in;
         }
 
         @media ${breakpoints.device.phone}{
