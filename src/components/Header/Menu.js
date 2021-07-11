@@ -4,7 +4,7 @@ import {MenuContainer} from './Menu.style.js';
 
 function Menu(props) {
     return (
-        <MenuContainer className={`${props.clicked? 'clicked' : ''}`}>
+        <MenuContainer className={`${props.clicked && 'clicked'}`}>
             
         </MenuContainer>
     );

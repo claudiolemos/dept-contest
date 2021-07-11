@@ -143,6 +143,14 @@ export const HeaderComponent = styled.header`
         }
     }
 
+    &.scroll.clicked {
+        background-color: rgba(255, 255, 255, 0);
+
+        .title {
+            opacity: 0;
+        }
+    }
+
     .dept {
         svg {
             width: 85px;

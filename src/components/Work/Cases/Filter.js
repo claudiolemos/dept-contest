@@ -13,7 +13,7 @@ function Filter(props) {
                 <Select onChange={(e) => props.onChange(e.target.value, 'category')}>
                     {
                         props.categories.map((option) => (
-                            <Option key={option}>{option}</Option>
+                            <Option selected={props.categoryValue === option} key={option}>{option}</Option>
                         ))
                     }
                 </Select>
@@ -25,7 +25,7 @@ function Filter(props) {
                 <Select onChange={(e) => props.onChange(e.target.value, 'industry')}>
                     {
                         props.industries.map((option) => (
-                            <Option key={option}>{option}</Option>
+                            <Option selected={props.industryValue === option} key={option}>{option}</Option>
                         ))
                     }
                 </Select>

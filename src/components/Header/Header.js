@@ -12,7 +12,7 @@ function Header(props) {
 
     useEffect(() => {
         window.onscroll = () => {
-            setScroll(window.pageYOffset > 10? true : false)
+            setScroll(window.pageYOffset > 10)
         }
     }, [])
 
@@ -26,14 +26,14 @@ function Header(props) {
 
     return (
         <>
-            <HeaderComponent className={`${scroll? 'scroll' : ''}`}>
+            <HeaderComponent className={`${scroll && 'scroll'} ${clicked && 'clicked'}`}>
                 <div className="header-container">
-                    <a className={`dept ${clicked? 'clicked' : ''}`} href="/"><DeptIcon alt="Dept Icon"/></a>
+                    <a className={`dept ${clicked && 'clicked'}`} href="/"><DeptIcon alt="Dept Icon"/></a>
                     <ul className="title">
                         <li><p><a href="/">Dept Agency</a></p></li>
                         <li><p>&nbsp;&#8211;&nbsp;Work</p></li>
                     </ul>
-                    <ul className={`menu ${clicked? 'clicked' : ''}`}>
+                    <ul className={`menu ${clicked && 'clicked'}`}>
                         <li><button onClick={handleMenuClick}><p>Menu</p></button></li>
                         <li>
                             <button onClick={handleMenuClick}>
@@ -43,7 +43,7 @@ function Header(props) {
                         </li>
                     </ul>
                 </div>
-                <Divider className={`${clicked? 'clicked' : ''}`}/>
+                <Divider className={`${clicked && 'clicked'}`}/>
             </HeaderComponent>
             <Menu clicked={clicked}/>
         </>

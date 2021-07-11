@@ -49,9 +49,9 @@ function Clients(props) {
                         .map((client) => (
                             <GridElement key={client.id}>
                                 {client.animate &&
-                                    <Image className={`second-image ${client.animate? 'animate' : ''}`} src={client.old}/>
+                                    <Image className={`second-image ${client.animate && 'animate'}`} src={client.old}/>
                                 }
-                                <Image className={`first-image ${client.animate? 'animate' : ''}`} src={client.image} alt={`${client.name} logo`}/>
+                                <Image className={`first-image ${client.animate && 'animate'}`} src={client.image} alt={`${client.name} logo`}/>
                             </GridElement>
                         ))
                 }
