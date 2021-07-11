@@ -63,6 +63,30 @@ export const GridElement = styled.li`
         left: 0;
         opacity: 0;
     }
+
+    @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+    @keyframes fadeOut {
+        from {opacity: 1;}
+        to {opacity: 0;}
+    }
+
+    .first-image.animate {
+        animation: fadeIn 1.5s 1;
+        -webkit-animation: fadeIn 1.5s 1;
+        -moz-animation: fadeIn 1.5s 1;
+        -o-animation: fadeIn 1.5s 1;
+    }
+
+    .second-image.animate {
+        animation: fadeOut 1s 1;
+        -webkit-animation: fadeOut 1s 1;
+        -moz-animation: fadeOut 1s 1;
+        -o-animation: fadeOut 1s 1;
+    }
 `
 
 export const Image = styled.img`

@@ -12,7 +12,7 @@ function Clients(props) {
         axios
         .get('./data/clients.json')
         .then(response => {
-            setClients(response.data.map((element, index) => {return {...element, "index": index < clientsPerPage? index : -1, "old": ''}}))
+            setClients(response.data.map((element, index) => {return {...element, "index": index < clientsPerPage? index : -1, animate: false}}))
         })
         .catch(error => {
             console.log(error)
@@ -21,17 +21,18 @@ function Clients(props) {
 
     useEffect(() => {
         const interval = setInterval(() => {
-          setCount(count + 1);
+            setCount(count + 1);
 
-          const lastClient = clients.find(client => client.old !== '')
-          if(lastClient) lastClient.old = ''
+            const lastClient = clients.find(client => client.animate)
+            if(lastClient) lastClient.animate = false
+        
+            const newClient = clients.filter(client => client.index === -1)[Math.floor(Math.random() * (clients.length - clientsPerPage))]
+            const oldClient = clients.filter(client => client.index !== -1)[Math.floor(Math.random() * (clientsPerPage))]
 
-          const newClient = clients.filter(client => client.index === -1)[Math.floor(Math.random() * (clients.length - clientsPerPage))]
-          const oldClient = clients.filter(client => client.index !== -1)[Math.floor(Math.random() * (clientsPerPage))]
-
-          newClient.index = oldClient.index
-          newClient.old = oldClient.image
-          oldClient.index = -1
+            newClient.index = oldClient.index
+            newClient.old = oldClient.image
+            newClient.animate = true
+            oldClient.index = -1
         }, 3000);
         return () => clearInterval(interval)
       }, [clients, count]);
@@ -47,10 +48,10 @@ function Clients(props) {
                         .sort((a, b) => a.index - b.index)
                         .map((client) => (
                             <GridElement key={client.id}>
-                                {client.old !== '' &&
-                                    <Image className="second-image" src={client.old} alt={`${client.name} logo`}/>
+                                {client.animate &&
+                                    <Image className={`second-image ${client.animate? 'animate' : ''}`} src={client.old}/>
                                 }
-                                <Image className="first-image" src={client.image} alt={`${client.name} logo`}/>
+                                <Image className={`first-image ${client.animate? 'animate' : ''}`} src={client.image} alt={`${client.name} logo`}/>
                             </GridElement>
                         ))
                 }
