@@ -6,9 +6,10 @@ const size = {
 
 const device = {
     portrait: `only screen and (max-width:${size.phone})`,
-    landscape: `only screen and (min-width:${size.phone} and (max-width:${size.tablet})`,
+    landscape: `only screen and (min-width:${size.phone}) and (max-width:${size.tablet})`,
     phone: `only screen and (max-width:${size.tablet})`,
-    tablet: `only screen and (min-width:${size.tablet} and (max-width:${size.desktop})`,
+    tablet: `only screen and (min-width:${size.tablet}) and (max-width:${size.desktop})`,
+    mobile: `only screen and (max-width:${size.desktop})`,
     desktop: `only screen and (min-width:${size.desktop})`
 }
 

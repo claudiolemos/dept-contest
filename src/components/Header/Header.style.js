@@ -17,7 +17,7 @@ export const HeaderComponent = styled.header`
 
 
     @media ${breakpoints.device.phone} {
-        padding: 20px 20px 0px 20px;
+        padding: 0px 20px;
     }
 
 
@@ -70,6 +70,7 @@ export const HeaderComponent = styled.header`
         button {
             border: none;
             background-color: transparent;
+            padding-right: 0px;
 
             &:hover {
                 cursor: pointer;
@@ -171,6 +172,10 @@ export const HeaderComponent = styled.header`
         background-color: rgba(255, 255, 255, 0);
         padding: 40px 40px 0px 40px;
 
+        @media ${breakpoints.device.phone} {
+            padding: 20px 20px 0px 20px;
+        }
+
         .title {
             opacity: 0;
         }
@@ -184,6 +189,10 @@ export const HeaderComponent = styled.header`
             -webkit-transition: all 0.3s ease-in-out;
             -moz-transition: all 0.3s ease-in-out;
             -o-transition: all 0.3s ease-in-out;
+
+            @media ${breakpoints.device.phone} {
+                width: 60px;
+            }
         }
     }
 

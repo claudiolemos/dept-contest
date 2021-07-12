@@ -16,8 +16,60 @@ export const MenuContainer = styled.div`
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
-    display: flex;
-    flex-direction: row-reverse;
+
+    & > div {
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        height: 100%;
+        transition: all 0.4s ease-in-out;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+
+        @media ${breakpoints.device.phone} {
+            flex-direction: column;
+        }
+
+        @media ${breakpoints.device.phone} {
+            padding: 20px;
+        }
+
+        @media ${breakpoints.device.tablet} {
+            padding: 40px;
+        }
+
+        @media ${breakpoints.device.phone} {
+            margin-top: 40px;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+
+            .social {
+                @media ${breakpoints.device.phone} {
+                    margin-left: auto;
+                }
+            }
+
+            @media ${breakpoints.device.tablet} {
+                margin-right: 40px;
+            }
+
+            @media ${breakpoints.device.desktop} {
+                margin-right: 40px;
+            }
+
+            @media ${breakpoints.device.phone} {
+                flex-direction: row;
+                width: 100%;
+            }
+        }
+    }
 
     @media ${breakpoints.device.desktop} {
         border: solid white 20px;
@@ -32,11 +84,13 @@ export const MenuContainer = styled.div`
 
     .nav {
         list-style: none;
+        width: 100%;
+        padding: 0;
 
         a {
             font-family: 'Teko', 'Arial', -apple-system, sans-serif;
-            font-weight: 300;
-            font-size: 100px;
+            font-weight: 200;
+            font-size: 50px;
             color: white;
             text-transform: uppercase;
             text-decoration: none;
@@ -47,6 +101,19 @@ export const MenuContainer = styled.div`
             display: flex;
             flex-direction: row;
             align-items: center;
+            justify-content: flex-end;
+
+            @media ${breakpoints.device.desktop} {
+                font-size: 70px;
+            }
+
+            @media ${breakpoints.device.phone} {
+                font-size: 30px;
+            }
+        }
+
+        a p {
+            margin: 0;
         }
 
         a.not-hover {
@@ -75,6 +142,7 @@ export const MenuContainer = styled.div`
 
     .language, .social {
         list-style: none;
+        padding: 0;
 
         svg {
             fill: white;
@@ -100,7 +168,7 @@ export const MenuContainer = styled.div`
             font-weight: bold;
             font-size: 12px;
             color: white;
-
+            white-space: nowrap;
         }
     }
 `
