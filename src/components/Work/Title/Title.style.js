@@ -7,7 +7,7 @@ export const Section = styled.section`
     background-repeat: no-repeat;
     background-position: center center;
     margin: 20px;
-    height: 940px;
+    height: 700px;
     transition: all 0.3s ease-in;
     -webkit-transition: all 0.3s ease-in;
     -moz-transition: all 0.3s ease-in;
@@ -15,6 +15,12 @@ export const Section = styled.section`
 
     @media ${breakpoints.device.phone} {
         margin: 0px;
+        height: 350px;
+    }
+
+    @media ${breakpoints.device.tablet} {
+        margin: 0px;
+        height: 500px;
     }
 `
 

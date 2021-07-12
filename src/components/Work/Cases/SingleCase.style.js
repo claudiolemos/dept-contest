@@ -60,7 +60,7 @@ export const Label = styled.p`
     text-transform: uppercase;
 `
 
-export const Title = styled.h3`
+export const Title = styled.h2`
     font-family: 'Teko', 'Arial', -apple-system, sans-serif;
     font-weight: 200;
     font-size: 30px;

@@ -34,9 +34,9 @@ function Header(props) {
                         <li><p>&nbsp;&#8211;&nbsp;Work</p></li>
                     </ul>
                     <ul className={`menu ${clicked && 'clicked'} ${scroll && 'scroll'}`}>
-                        <li><button onClick={handleMenuClick}><p>Menu</p></button></li>
+                        <li><button aria-label="Menu button" onClick={handleMenuClick}><p>Menu</p></button></li>
                         <li class="button">
-                            <button onClick={handleMenuClick}>
+                            <button aria-label="Menu button" onClick={handleMenuClick}>
                                 <div className="menu-bar-1"></div>
                                 <div className="menu-bar-2"></div>
                             </button>
