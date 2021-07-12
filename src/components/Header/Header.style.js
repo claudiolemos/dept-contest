@@ -12,6 +12,7 @@ export const HeaderComponent = styled.header`
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
+    pointer-events: none;
 
     ul {
         list-style-type: none;
@@ -28,6 +29,7 @@ export const HeaderComponent = styled.header`
         flex-direction: row;
         margin-left: auto;
         padding-left: 0;
+        pointer-events: all;
 
         &:hover {
             cursor: pointer;

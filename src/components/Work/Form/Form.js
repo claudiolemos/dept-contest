@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import * as yup from 'yup';
 
 import {FormContainer, Title, StyledForm, FormRow, InputContainer, Label, RequiredLabel, Input, MessageInput, Submit} from './Form.style.js';

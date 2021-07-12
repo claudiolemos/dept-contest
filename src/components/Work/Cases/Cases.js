@@ -82,7 +82,7 @@ function Cases(props) {
         {paginate &&
             <Paginate onChange={handlePageChange} pageNumber={pageNumber} pageCount={pageCount} pageRange={pageRange}/>
         }
-        {cases.length == 0 &&
+        {cases.length === 0 &&
             <Message>Congrats, you have found a unicorn :) Change the filters to check out more cases!</Message>
         }
         </>

@@ -81,7 +81,7 @@
     },
     {
         "id": 17,
-        "name": "DeltaLloyd",
+        "name": "Delta Lloyd",
         "image": "./images/clients/DeltaLloyd_logo_zwart.png"
     },
     {
@@ -118,5 +118,50 @@
         "id": 24,
         "name": "Weber",
         "image": "./images/clients/Weber_logo_zwart.png"
+    },
+    {
+        "id": 25,
+        "name": "Deutsche Welle",
+        "image": "./images/clients/deutsche-welle.png"
+    },
+    {
+        "id": 26,
+        "name": "Douglas",
+        "image": "./images/clients/Douglas.png"
+    },
+    {
+        "id": 27,
+        "name": "Mojo",
+        "image": "./images/clients/Mojo_logo_zwart.png"
+    },
+    {
+        "id": 28,
+        "name": "Otto",
+        "image": "./images/clients/Otto.png"
+    },
+    {
+        "id": 29,
+        "name": "Radisson",
+        "image": "./images/clients/radisson.png"
+    },
+    {
+        "id": 30,
+        "name": "Samsung",
+        "image": "./images/clients/samsung.png"
+    },
+    {
+        "id": 31,
+        "name": "Schramm",
+        "image": "./images/clients/schramm.png"
+    },
+    {
+        "id": 32,
+        "name": "Thomas Cook",
+        "image": "./images/clients/thomascook.png"
+    },
+    {
+        "id": 33,
+        "name": "Visit Berlin",
+        "image": "./images/clients/visitberlin.png"
     }
 ]

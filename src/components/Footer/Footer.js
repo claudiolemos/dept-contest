@@ -2,6 +2,8 @@ import React from 'react';
 
 import {FooterComponent, Divider} from './Footer.style.js';
 
+import Nav from './../../assets/data/nav.json'
+
 import {ReactComponent as DeptIcon} from './../../assets/icons/icon-dept.svg';
 import {ReactComponent as FacebookIcon} from './../../assets/icons/icon-fb.svg';
 import {ReactComponent as TwitterIcon} from './../../assets/icons/icon-twitter.svg';
@@ -20,12 +22,11 @@ function Footer(props) {
                 <div className="footer-top">
                     <a className="dept" href="/"><DeptIcon alt="Dept Icon"/></a>
                     <ul className="nav">
-                        <li><a href="/work">Work</a></li>
-                        <li><a href="/services">Services</a></li>
-                        <li><a href="/stories">Stories</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/careers">Careers</a></li>
-                        <li><a href="/contact">Contact</a></li>
+                        {
+                            Nav.map((menu) => (
+                                <li><a href={`/${menu}`}>{menu}</a></li>
+                            ))
+                        }
                     </ul>
                     <ul className="social">
                         <li><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/DeptAgency/"><FacebookIcon alt="Facebook Icon"/></a></li>
