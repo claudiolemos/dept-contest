@@ -9,7 +9,7 @@ export const MenuContainer = styled.div`
     right: 0;
     z-index: 1;
     pointer-events: none;
-    border: solid white 20px;
+    border: solid white 0px;
     opacity: 0;
     transform: scale(1.1);
     transition: all 0.4s ease-in-out;
@@ -18,6 +18,10 @@ export const MenuContainer = styled.div`
     -o-transition: all 0.4s ease-in-out;
     display: flex;
     flex-direction: row-reverse;
+
+    @media ${breakpoints.device.desktop} {
+        border: solid white 20px;
+    }
 
     &.clicked {
         pointer-events: all;

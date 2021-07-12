@@ -8,6 +8,14 @@ export const Section = styled.section`
     background-position: center center;
     margin: 20px;
     height: 940px;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+
+    @media ${breakpoints.device.phone} {
+        margin: 0px;
+    }
 `
 
 export const TitleText = styled.h1`

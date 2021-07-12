@@ -2,17 +2,24 @@ import styled from 'styled-components'
 import breakpoints from './../../breakpoints.js';
 
 export const HeaderComponent = styled.header`
-    padding: 15px;
+    padding: 40px 40px 0px 40px;
     position: fixed;
     z-index: 2;
     top: 0;
     right: 0;
     left: 0;
+    margin: 0 auto;
     transition: all 0.3 ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     pointer-events: none;
+
+
+    @media ${breakpoints.device.phone} {
+        padding: 20px 20px 0px 20px;
+    }
+
 
     ul {
         list-style-type: none;
@@ -22,6 +29,12 @@ export const HeaderComponent = styled.header`
         display: flex;
         flex-direction: row;
         align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        transition: all 0.3 ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
     }
 
     .menu {
@@ -86,6 +99,10 @@ export const HeaderComponent = styled.header`
         -moz-transition: all 0.3s ease-in-out;
         -o-transition: all 0.3s ease-in-out;
 
+        @media ${breakpoints.device.phone} {
+            display: none;
+        }
+
         li {
             font-family: 'Arial', -apple-system, sans-serif;
             font-weight: 100;
@@ -129,9 +146,14 @@ export const HeaderComponent = styled.header`
 
     &.scroll {
         background-color: rgba(255, 255, 255, 0.97);
+        padding-top: 0px;
 
         .dept svg {
             width: 60px;
+        }
+
+        .dept.clicked svg {
+            width: 85px;
         }
 
         hr {
@@ -147,6 +169,7 @@ export const HeaderComponent = styled.header`
 
     &.scroll.clicked {
         background-color: rgba(255, 255, 255, 0);
+        padding: 40px 40px 0px 40px;
 
         .title {
             opacity: 0;
@@ -175,6 +198,8 @@ export const Divider = styled.hr`
     margin: 0;
     padding: 0;
     bottom: 0;
+    max-width: 1200px;
+    margin: 0 auto;
     transition: all 0.3 ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
