@@ -168,6 +168,10 @@ export const FooterComponent = styled.footer`
         background-color: transparent;
         cursor: pointer;
 
+        @media ${breakpoints.device.phone}{
+            display: none;
+        }
+
         svg {
             fill: #141fd3;
             transition: all 0.2s ease-in;

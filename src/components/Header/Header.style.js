@@ -95,6 +95,7 @@ export const HeaderComponent = styled.header`
         visibility: hidden;
         flex-direction: row;
         margin: 0 auto;
+        transform: translateX(15px);
         transition: all 0.3 ease-in-out;
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
@@ -165,6 +166,7 @@ export const HeaderComponent = styled.header`
         .title {
             visibility: visible;
             opacity: 1;
+            transform: translateX(30px);
         }
     }
 

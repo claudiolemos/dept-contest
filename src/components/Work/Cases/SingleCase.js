@@ -7,19 +7,21 @@ import {ReactComponent as ArrowIcon} from './../../../assets/icons/icon-dropdown
 
 function SingleCase(props) {
     return (
-        // <Fade bottom distance="50px">
-            <Article>
-                <div>
-                    <Image src={props.case.image} alt={props.case.description}/>
-                    <Label>{props.case.label}</Label>
-                    <Title>{props.case.title}</Title>
-                    <Button>
-                        <ArrowIcon />
-                        <p>View Case</p>
-                    </Button>
-                </div>
-            </Article>
-        // </Fade>
+        <Article>
+            <div>
+                <Fade bottom distance="50px">
+                    <>
+                        <Image src={props.case.image} alt={props.case.description}/>
+                        <Label>{props.case.label}</Label>
+                        <Title>{props.case.title}</Title>
+                        <Button>
+                            <ArrowIcon />
+                            <p>View Case</p>
+                        </Button>
+                    </>
+                </Fade>
+            </div>
+        </Article>
     );
   }
   
