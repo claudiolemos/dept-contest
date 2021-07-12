@@ -4,6 +4,7 @@
         "label": "Arla",
         "title": "Swipe to find your next holiday destination",
         "image": "./images/cases/arla.png",
+        "date": "2018-08-30",
         "description": "Protein drinks, yoghurts, a papaya, chocolate powder, and a few blueberries spread on top of a table",
         "categories": [
             "advertising", "branding"
@@ -17,6 +18,7 @@
         "label": "Liberty Global",
         "title": "Delivering complex commerce solutions",
         "image": "./images/cases/liberty-global.png",
+        "date": "2018-08-30",
         "description": "Server data center room",
         "categories": [
             "technology", "data & intelligence"
@@ -30,6 +32,7 @@
         "label": "Koninklijke Bibliotheek",
         "title": "The search for the most influential book ever",
         "image": "./images/cases/koninklijke-bibliotheek.png",
+        "date": "2018-08-30",
         "description": "Several books staked on top of each other in front of an orange background",
         "categories": [
             "media", "marketing"
@@ -43,6 +46,7 @@
         "label": "Zalando",
         "title": "Innovative SEO and content strategy for Zalando",
         "image": "./images/cases/zalando.png",
+        "date": "2018-08-30",
         "description": "Two men brainstorming in front of a white board, one  of them is writing",
         "categories": [
             "strategy", "content"
@@ -56,6 +60,7 @@
         "label": "JBL",
         "title": "Live like a champion with Jerome Booteng",
         "image": "./images/cases/jbl.png",
+        "date": "2018-08-30",
         "description": "A man in a sporty jacket listening to music with his JBL headphones",
         "categories": [
             "advertising", "marketing"
@@ -69,6 +74,7 @@
         "label": "Chocomel",
         "title": "A campaign for the limited edition letter packs",
         "image": "./images/cases/chocomel.png",
+        "date": "2018-08-30",
         "description": "Several Chocomel packages in front of a yellow background",
         "categories": [
             "advertising", "marketing"
@@ -82,6 +88,7 @@
         "label": "TUI",
         "title": "Swipe to find your next holiday destination",
         "image": "./images/cases/tui.png",
+        "date": "2018-08-30",
         "description": "An illustration of a person with their camera on their shoulder looking at a map and scratching their head",
         "categories": [
             "digital marketing", "media"
@@ -95,6 +102,7 @@
         "label": "Be Lightning",
         "title": "Delivering clarity on a global scale",
         "image": "./images/cases/lightning.png",
+        "date": "2018-08-30",
         "description": "A street light in front of city buildings",
         "categories": [
             "technology", "strategy"
@@ -108,6 +116,7 @@
         "label": "Gemeentemuseum",
         "title": "A 100 years of Mondriaan & De Stijl",
         "image": "./images/cases/gemeentemuseum.png",
+        "date": "2018-08-30",
         "description": "A woman standing in front of an art piece at a museum",
         "categories": [
             "design", "media"
@@ -121,6 +130,7 @@
         "label": "Philips",
         "title": "Beautiful design meets innovative technology",
         "image": "./images/cases/philips.png",
+        "date": "2018-08-30",
         "description": "Several Philips lights displayed around a purple room",
         "categories": [
             "technology", "design"
@@ -134,6 +144,7 @@
         "label": "Kempen",
         "title": "Not some average banking website",
         "image": "./images/cases/kempen.png",
+        "date": "2018-08-30",
         "description": "A man pointing at a piece of paper",
         "categories": [
             "data & intelligence"
@@ -147,12 +158,55 @@
         "label": "Bol.com",
         "title": "A summer island in the Netherlands",
         "image": "./images/cases/bolcom.png",
+        "date": "2018-08-30",
         "description": "Several people having fun at lake, a man is sliding a water slide on top of a inflatable toy",
         "categories": [
             "advertising"
         ],
         "industries": [
             "travel"
+        ]
+    },
+    {
+        "id": 13,
+        "label": "Muuto",
+        "title": "Bridging brand narrative, service and partnership with a strong user experience",
+        "image": "./images/cases/Muuto2-585x585-c.png",
+        "date": "2021-07-01",
+        "description": "Muuto's website displayed on two iPhones and a MacBook",
+        "categories": [
+            "branding"
+        ],
+        "industries": [
+            "b2b", "consumer goods & services"
+        ]
+    },
+    {
+        "id": 14,
+        "label": "Eurovision Song Contest",
+        "title": "Transforming the Eurovision Village into a 3D Virtual World",
+        "image": "./images/cases/eurovision-featured-1-585x585-c.png",
+        "date": "2021-05-29",
+        "description": "Eurovision 2021 logo",
+        "categories": [
+            "branding", "advertising", "media"
+        ],
+        "industries": [
+            "tech, media & telecommunications"
+        ]
+    },
+    {
+        "id": 15,
+        "label": "Gant",
+        "title": "Global e-commerce transformation for GANT",
+        "image": "./images/cases/GANT-HEADER-1-585x585-c.png",
+        "date": "2021-02-12",
+        "description": "A woman sitting on a lap wearing GANT clothes",
+        "categories": [
+            "branding", "advertising"
+        ],
+        "industries": [
+            "retail & commerce"
         ]
     }
 ]

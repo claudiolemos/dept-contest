@@ -34,7 +34,8 @@ function Cases(props) {
         axios
         .get('./data/cases.json')
         .then(response => {
-            const filteredCases = response.data.reverse()
+            const filteredCases = response.data
+                .sort((a, b) => new Date(b.date) - new Date(a.date)  || b.id - a.id)
                 .filter(value => category === Categories[0] || value.categories.includes(category))
                 .filter(value => industry === Industries[0] || value.industries.includes(industry))
 
