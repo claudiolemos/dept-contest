@@ -15,11 +15,9 @@ export const HeaderComponent = styled.header`
     -o-transition: all 0.3s ease-in-out;
     pointer-events: none;
 
-
     @media ${breakpoints.device.phone} {
         padding: 0px 20px;
     }
-
 
     ul {
         list-style-type: none;
@@ -128,6 +126,14 @@ export const HeaderComponent = styled.header`
         li:nth-of-type(1) {
             font-weight: bold;
         }
+    }
+
+    .title:not(.clicked) {
+        pointer-events: all;
+    }
+
+    .title.clicked {
+        pointer-events: none;
     }
 
     .clicked p {
