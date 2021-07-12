@@ -2,21 +2,48 @@ import styled from 'styled-components'
 import breakpoints from './../../../breakpoints.js';
 
 export const Article = styled.article`
-    /* flex: 50%; */
+    width: 50%;
+
+    &:nth-child(odd) {
+        div {
+            margin: 10px 10px 10px 20px
+        }
+
+        @media ${breakpoints.device.phone} {
+            div {
+                margin: 0px;
+            }
+        }
+    }
+
+    &:nth-child(even) {
+        div {
+            margin: 10px 20px 10px 10px
+        }
+
+        @media ${breakpoints.device.phone} {
+            div {
+                margin: 0px;
+            }
+        }
+    }
+
+    @media ${breakpoints.device.phone} {
+        width: 100%;
+    }
 
     &:hover img{
         clip-path: inset(5px);
     }
 
     &:hover button p{
-        transform: translateX(10px);
+        transform: translateX(20px);
     }
 `
 
 export const Image = styled.img`
-clip-path: inset(0px);
-    width: 500px;
-    height: 500px;
+    clip-path: inset(0px);
+    width: 100%;
     object-fit: cover;
     transition: all 0.2 ease-in;
     -webkit-transition: all 0.2s ease-in;
@@ -38,6 +65,8 @@ export const Title = styled.h3`
     font-weight: 200;
     font-size: 30px;
     color: #272727;
+    line-height: 1;
+    margin: 0;
 `
 
 export const Button = styled.button`
@@ -45,6 +74,8 @@ export const Button = styled.button`
     align-items: center;
     border: none;
     background-color: transparent;
+    margin: 0;
+    padding: 0;
 
     p {
         font-family: 'Arial', -apple-system, sans-serif;
@@ -55,8 +86,8 @@ export const Button = styled.button`
         transition: all 0.2 ease-in;
         -webkit-transition: all 0.2s ease-in;
         -moz-transition: all 0.2s ease-in;
-        -o-transition: all 0.2s ease-in;
-
+        -o-transition: all 0.2s ease-in;        
+        transform: translateX(10px);
     }
 
     svg {

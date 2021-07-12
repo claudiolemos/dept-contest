@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {useLocation} from 'react-router-dom';
 import axios from 'axios';
 
-import {Section, Message} from './Cases.style.js';
+import {CasesContainer, Section, Message} from './Cases.style.js';
 
 import Filter from './Filter.js'
 import SingleCase from './SingleCase.js'
@@ -71,22 +71,22 @@ function Cases(props) {
       }
     
     return (
-        <>
-        <Filter onChange={handleFilterChange} categories={Categories} categoryValue={category} industries={Industries} industryValue={industry}/>
-        <Section>
-            {
-                cases.map((singleCase) => (
-                    <SingleCase key={singleCase.id} case={singleCase}/>
-                ))
+        <CasesContainer>
+            <Filter onChange={handleFilterChange} categories={Categories} categoryValue={category} industries={Industries} industryValue={industry}/>
+            <Section>
+                {
+                    cases.map((singleCase) => (
+                        <SingleCase key={singleCase.id} case={singleCase}/>
+                    ))
+                }
+            </Section>
+            {paginate &&
+                <Paginate onChange={handlePageChange} pageNumber={pageNumber} pageCount={pageCount} pageRange={pageRange}/>
             }
-        </Section>
-        {paginate &&
-            <Paginate onChange={handlePageChange} pageNumber={pageNumber} pageCount={pageCount} pageRange={pageRange}/>
-        }
-        {cases.length === 0 &&
-            <Message>Congrats, you have found a unicorn :) Change the filters to check out more cases!</Message>
-        }
-        </>
+            {cases.length === 0 &&
+                <Message>Congrats, you have found a unicorn :) Change the filters to check out more cases!</Message>
+            }
+        </CasesContainer>
     );
   }
   

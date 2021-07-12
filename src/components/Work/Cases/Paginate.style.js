@@ -4,6 +4,14 @@ import breakpoints from './../../../breakpoints.js';
 export const Divider = styled.hr`
     border: 0.5px solid;
     border-color: #dddddd;
+
+    @media ${breakpoints.device.tablet} {
+        margin: 0 20px
+    }
+
+    @media ${breakpoints.device.desktop} {
+        /* margin: 0 40px */
+    }
 `
 
 export const PaginateContainer = styled.div`
