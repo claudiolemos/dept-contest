@@ -24,7 +24,7 @@ function Footer(props) {
                     <ul className="nav">
                         {
                             Nav.map((menu) => (
-                                <li><a href={`/${menu}`}>{menu}</a></li>
+                                <li key={menu}><a href={`/${menu}`}>{menu}</a></li>
                             ))
                         }
                     </ul>

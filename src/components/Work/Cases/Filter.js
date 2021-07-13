@@ -10,10 +10,10 @@ function Filter(props) {
             <Label>Show me</Label>
             <DropdownContainer>
                 <Placeholder>{props.categoryValue}</Placeholder>
-                <Select onChange={(e) => props.onChange(e.target.value, 'category')}>
+                <Select value={props.categoryValue} onChange={(e) => props.onChange(e.target.value, 'category')}>
                     {
                         props.categories.map((option) => (
-                            <Option selected={props.categoryValue === option} key={option}>{option}</Option>
+                            <Option key={option}>{option}</Option>
                         ))
                     }
                 </Select>
@@ -22,12 +22,21 @@ function Filter(props) {
             <Label>in</Label>
             <DropdownContainer>
                 <Placeholder>{props.industryValue}</Placeholder>
-                <Select onChange={(e) => props.onChange(e.target.value, 'industry')}>
+                <Select value={props.industryValue} onChange={(e) => props.onChange(e.target.value, 'industry')}>
                     {
                         props.industries.map((option) => (
-                            <Option selected={props.industryValue === option} key={option}>{option}</Option>
+                            <Option key={option}>{option}</Option>
                         ))
                     }
+                </Select>
+                <DropdownIcon />
+            </DropdownContainer>
+            <Label>as</Label>
+            <DropdownContainer>
+                <Placeholder>{props.grid? 'grid' : 'list'}</Placeholder>
+                <Select value={props.grid? 'grid' : 'list'} onChange={(e) => props.onGridChange()}>
+                    <Option key="grid">grid</Option>
+                    <Option key="list">list</Option>
                 </Select>
                 <DropdownIcon />
             </DropdownContainer>

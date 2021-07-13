@@ -6,10 +6,11 @@ export const FilterContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    margin: 20px 0px;
+    margin: 20px 40px;
 
     @media ${breakpoints.device.phone}{
         justify-content: flex-start;
+        margin: 20px 0;
     }
 `
 
@@ -27,6 +28,10 @@ export const DropdownContainer = styled.div`
     margin-right: 10px;
     cursor: pointer;
     align-items: center;
+
+    &:last-child {
+        margin-right: 0px;
+    }
 
     svg {
         margin-left: 5px;

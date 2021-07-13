@@ -17,6 +17,7 @@ const industries = Industries.map((industry) => industry.split(' ').join().split
 function Cases(props) {
     const [category, setCategory] = useState(Categories[0])
     const [industry, setIndustry] = useState(Industries[0])
+    const [grid, setGrid] = useState(true)
     const [cases, setCases] = useState([])
     const [paginate, setPaginate] = useState(false)
     const [pageNumber, setPageNumber] = useState(0)
@@ -42,8 +43,6 @@ function Cases(props) {
             const count = Math.ceil(filteredCases.length / casesPerPage)
             const paged = Number.parseInt(query.get('paged'))
 
-            console.log(paged)
-
             setPageNumber((paged && paged > 0 && paged <= count && paged - 1) || pageNumber)
             setPaginate(filteredCases.length > casesPerPage)
             setCases(filteredCases.slice(pageNumber*casesPerPage, pageNumber*casesPerPage+casesPerPage))
@@ -64,15 +63,19 @@ function Cases(props) {
         window.history.replaceState(null, document.title, `/work?paged=1&case_category=${categories[Categories.indexOf(type === 'category'? value : category)]}&case_industry=${industries[Industries.indexOf(type === 'industry'? value : industry)]}`)
     }
 
+    function handleGridChange(){
+        setGrid(!grid)
+    }
+
     function handlePageChange({selected}){
         setPageNumber(selected)
         setPageRange(selected < 3 ? selected + 1 : Math.abs(selected - pageCount) < 3 ? Math.abs(selected - pageCount) + 1 : 2)
         window.history.replaceState(null, 'document.title', `/work?paged=${selected+1}&case_category=${categories[Categories.indexOf(category)]}&case_industry=${industries[Industries.indexOf(industry)]}`)
-      }
+    }
     
     return (
         <CasesContainer>
-            <Filter onChange={handleFilterChange} categories={Categories} categoryValue={category} industries={Industries} industryValue={industry}/>
+            <Filter onChange={handleFilterChange} categories={Categories} categoryValue={category} industries={Industries} industryValue={industry} onGridChange={handleGridChange} grid={grid}/>
             <Section>
                 {
                     cases.map((singleCase) => (

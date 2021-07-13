@@ -21,18 +21,18 @@ function Form(props) {
             <StyledForm onSubmit={handleSubmit}>
                 <FormRow>
                     <InputContainer>
-                        <Label for="name">Name</Label>
+                        <Label htmlFor="name">Name</Label>
                         <Input type="text" name="name" id="name"/>
                         {!name.valid && <RequiredLabel>This field is required</RequiredLabel>}
                     </InputContainer>
                     <InputContainer>
-                        <Label for="email">Email</Label>
+                        <Label htmlFor="email">Email</Label>
                         <Input type="text" name="email" id="email"/>
                         {!email.valid && <RequiredLabel>{email.value === ''? 'This field is required' : 'Enter a valid email'}</RequiredLabel>}
                     </InputContainer>
                 </FormRow>
                     <InputContainer>
-                        <Label for="message">Message</Label>
+                        <Label htmlFor="message">Message</Label>
                         <MessageInput type="text" name="message" id="message"/>
                         {!message.valid && <RequiredLabel>This field is required</RequiredLabel>}
                     </InputContainer>
