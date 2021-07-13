@@ -122,17 +122,25 @@ export const MenuContainer = styled.div`
 
         a.hover svg {
             opacity: 1;
-            transform: translateX(-20px) scale(3) rotate(-90deg);
+            transform: translate(-20px, -3px) scale(3) rotate(-90deg);
+
+            @media ${breakpoints.device.phone} {
+                transform: translate(-10px, -2px) scale(1.3) rotate(-90deg);
+            }
         }
 
         svg {
             fill: white;
             opacity: 0;
-            transform: translateX(-40px) scale(3) rotate(-90deg) ;
+            transform: translate(-40px, -3px) scale(3) rotate(-90deg);
             transition: all 0.3s ease-in-out;
             -webkit-transition: all 0.3s ease-in-out;
             -moz-transition: all 0.3s ease-in-out;
             -o-transition: all 0.3s ease-in-out;
+
+            @media ${breakpoints.device.phone} {
+                transform: translate(-20px, -2px) scale(1.3) rotate(-90deg);
+            }
         }
     }
 
