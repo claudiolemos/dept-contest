@@ -6,7 +6,7 @@ export const FilterContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    margin: 20px 40px;
+    margin: 20px;
 
     @media ${breakpoints.device.phone}{
         justify-content: flex-start;
