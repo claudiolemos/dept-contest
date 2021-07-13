@@ -68,6 +68,8 @@ export const FooterComponent = styled.footer`
 
         @media ${breakpoints.device.phone}{
             flex-direction: column;
+            padding-left: 0;
+            margin-top: 0;
 
             li {
                 display: block;
@@ -141,6 +143,7 @@ export const FooterComponent = styled.footer`
             flex-direction: column;
             margin-left: 0;
             margin-bottom: 0;
+            padding: 0;
         }
 
     }
@@ -159,6 +162,7 @@ export const FooterComponent = styled.footer`
         @media ${breakpoints.device.phone}{
             margin-left: 0;
             margin-top: 0;
+            padding: 0;
         }
     }
 
