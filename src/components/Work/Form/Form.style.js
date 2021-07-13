@@ -6,6 +6,7 @@ export const FormContainer = styled.div`
     margin: 40px auto;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 
     @media ${breakpoints.device.phone} {
         flex-direction: column;
@@ -25,12 +26,16 @@ export const Title = styled.h2`
         width: 100%;
         margin: 0 auto;
         text-align: center;
-        font-size: 40px;
+        font-size: 35px;
     }
 `
 
 export const StyledForm = styled.form`
     margin-left: 10%;
+
+    @media ${breakpoints.device.phone} {
+        margin: 0 40px;
+    }
 `
 
 export const FormRow = styled.div`
@@ -49,7 +54,16 @@ export const InputContainer = styled.div`
     &:first-child {
         margin-right: 40px;
         margin-bottom: 80px;
+
+        @media ${breakpoints.device.phone} {
+            margin-right: 0px;
+            margin-bottom: 0px;
+        }
     }
+
+    @media ${breakpoints.device.phone} {
+            margin-top: 20px;
+        }
 `
 
 export const Label = styled.label`
@@ -134,5 +148,9 @@ export const Submit = styled.input`
     &:hover {
         cursor: pointer;
         background-color: #0e0e0e;
+    }
+
+    @media ${breakpoints.device.phone} {
+        width: 100%;
     }
 `
