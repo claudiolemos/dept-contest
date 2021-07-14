@@ -79,7 +79,7 @@ function Cases(props) {
             <Section>
                 {
                     cases.map((singleCase) => (
-                        <SingleCase key={singleCase.id} case={singleCase}/>
+                        <SingleCase key={singleCase.id} case={singleCase} grid={grid}/>
                     ))
                 }
             </Section>

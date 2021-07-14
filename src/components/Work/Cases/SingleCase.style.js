@@ -4,25 +4,69 @@ import breakpoints from './../../../breakpoints.js';
 export const Article = styled.article`
     width: 50%;
 
+    &.list {
+        width: 50%;
+
+        @media ${breakpoints.device.phone} {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        & > div {
+            display: flex;
+            flex-direction: row;
+        }
+
+        & > div > div {
+            margin-left: 10px;
+
+
+            @media ${breakpoints.device.phone} {
+                > p {
+                    margin: 0;
+                    font-size: 12px;
+                }
+
+                h2 {
+                    font-size: 20px;
+                }
+
+                button > p {
+                    font-size: 10px;
+                }
+            }
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+
+            @media ${breakpoints.device.phone} {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+
     &:nth-child(odd) {
-        div {
-            margin: 10px 10px 10px 20px
+        & > div {
+            margin: 10px 10px 10px 20px;
         }
 
         @media ${breakpoints.device.phone} {
-            div {
+            & > div {
                 margin: 0px;
             }
         }
     }
 
     &:nth-child(even) {
-        div {
-            margin: 10px 20px 10px 10px
+        & > div {
+            margin: 10px 20px 10px 10px;
         }
 
         @media ${breakpoints.device.phone} {
-            div {
+            & > div {
                 margin: 0px;
             }
         }
@@ -41,14 +85,19 @@ export const Article = styled.article`
     }
 `
 
+export const InfoContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+`
+
 export const Image = styled.img`
     clip-path: inset(0px);
     width: 100%;
     object-fit: cover;
-    transition: all 0.2 ease-in;
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
+    transition: all 0.2 ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
 `
 
 export const Label = styled.p`
