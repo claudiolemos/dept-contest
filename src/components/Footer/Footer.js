@@ -42,7 +42,7 @@ function Footer(props) {
                         <li><p><a href="/terms">Terms and conditions</a></p></li>
                     </ul>
                     <ul className="copyright">
-                        <li><p>&copy; {(new Date().getFullYear())} Dept</p></li>
+                        <li><p>&copy; {(new Date().getFullYear())} Dept Agency</p></li>
                     </ul>
                 </div>
                 <button className="top" onClick={handleTopClick}>
