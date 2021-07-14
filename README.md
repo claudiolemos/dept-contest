@@ -1,6 +1,6 @@
 # Dept Contest @ Digital Days
 
-This repository contains my submission for Dept's contest at UP Digital Days online event, which can be accessed here: http://claudiolemos-dept.netlify.app/work
+This repository contains my frontend assignment for Dept's contest at UP Digital Days online event, which can be accessed here: http://claudiolemos-dept.netlify.app/work
 
 ## Technologies
 
