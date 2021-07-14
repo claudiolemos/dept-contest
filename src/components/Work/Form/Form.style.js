@@ -81,6 +81,17 @@ export const RequiredLabel = styled.label`
     margin-top: 10px;
 `
 
+export const SucessLabel = styled.label`
+    font-family: 'Arial', -apple-system, sans-serif;
+    font-size: 12px;
+    color: #1a18f7;
+    margin-left: 10px;
+
+    @media ${breakpoints.device.phone} {
+        margin-left: 0px;
+    }
+`
+
 export const Input = styled.input`
     border: none;
     width: 300px;

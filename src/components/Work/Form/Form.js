@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
 import * as yup from 'yup';
 
-import {FormContainer, Title, StyledForm, FormRow, InputContainer, Label, RequiredLabel, Input, MessageInput, Submit} from './Form.style.js';
+import {FormContainer, Title, StyledForm, FormRow, InputContainer, Label, RequiredLabel, SucessLabel, Input, MessageInput, Submit} from './Form.style.js';
 
 function Form(props) {
-    const [name, setName] = useState({value: '', valid: true})
-    const [email, setEmail] = useState({value: '', valid: true})
-    const [message, setMessage] = useState({value: '', valid: true})
+    const [name, setName] = useState({value: '', valid: -1})
+    const [email, setEmail] = useState({value: '', valid: -1})
+    const [message, setMessage] = useState({value: '', valid: -1})
 
     async function handleSubmit(e) {
         e.preventDefault()
@@ -37,6 +37,7 @@ function Form(props) {
                         {!message.valid && <RequiredLabel>This field is required</RequiredLabel>}
                     </InputContainer>
                 <Submit type="submit" value="Send"/>
+                {name.valid && email.valid && message.valid && name.value !== '' && email.value !== '' && message.value !== '' && <SucessLabel>Thank you for your message :)</SucessLabel>}
             </StyledForm>
         </FormContainer>
     );
