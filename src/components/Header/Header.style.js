@@ -98,6 +98,7 @@ export const HeaderComponent = styled.header`
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         -o-transition: all 0.3s ease-in-out;
+        pointer-events: all;
 
         @media ${breakpoints.device.phone} {
             display: none;
@@ -128,40 +129,12 @@ export const HeaderComponent = styled.header`
         }
     }
 
-    .title:not(.clicked) {
-        pointer-events: all;
-    }
-
-    .title.clicked {
-        pointer-events: none;
-    }
-
-    .clicked p {
-        opacity: 0;
-    }
-
-    .clicked .menu-bar-1 {
-        -webkit-transform: rotate(-45deg) translate(-2px, 2px);
-        transform: rotate(-45deg) translate(-2px, 2px);
-        background-color: white;
-    }
-
-    .clicked .menu-bar-2 {
-        -webkit-transform: rotate(45deg) translate(-2px, -2px);
-        transform: rotate(45deg) translate(-2px, -2px);
-        background-color: white;
-    }
-
     &.scroll {
         background-color: rgba(255, 255, 255, 0.97);
         padding-top: 0px;
 
         .dept svg {
             width: 60px;
-        }
-
-        .dept.clicked svg {
-            width: 85px;
         }
 
         hr {
@@ -180,12 +153,46 @@ export const HeaderComponent = styled.header`
         background-color: rgba(255, 255, 255, 0);
         padding: 40px 40px 0px 40px;
 
+        .dept svg {
+            width: 85px;
+        }
+
+        .title {
+            pointer-events: none;
+        }
+
         @media ${breakpoints.device.phone} {
             padding: 20px 20px 0px 20px;
         }
 
         .title {
             opacity: 0;
+        }
+    }
+
+    &.clicked {
+        .dept svg {
+            fill: white;
+        }
+
+        p {
+            opacity: 0;
+        }
+
+        .menu-bar-1 {
+            transform: rotate(-45deg) translate(-2px, 2px);
+            -webkit-transform: rotate(-45deg) translate(-2px, 2px);
+            -moz-transform: rotate(-45deg) translate(-2px, 2px);
+            -o-transform: rotate(-45deg) translate(-2px, 2px);
+            background-color: white;
+        }
+
+        .menu-bar-2 {
+            transform: rotate(45deg) translate(-2px, -2px);
+            -webkit-transform: rotate(45deg) translate(-2px, -2px);
+            -moz-transform: rotate(45deg) translate(-2px, -2px);
+            -o-transform: rotate(45deg) translate(-2px, -2px);
+            background-color: white;
         }
     }
 
@@ -202,10 +209,6 @@ export const HeaderComponent = styled.header`
                 width: 60px;
             }
         }
-    }
-
-    .clicked svg {
-        fill: white;
     }
 `
 
