@@ -31,10 +31,10 @@ export const Button = styled.button`
     -webkit-transition: transform 0.2s ease-in;
     -moz-transition: transform 0.2s ease-in;
     -o-transition: transform 0.2s ease-in;
+    margin: 20px 20px 20px auto;
 
     @media ${breakpoints.device.phone}{
         width: 100%;
-        margin: 20px;
     }
 
     p {
